@@ -139,6 +139,8 @@ Object.defineProperties(chelsea, {
         //enumerable: true
       }
 })
+//------------
+
 let bird = {
     name: "pigeon",
     color: "blue"
