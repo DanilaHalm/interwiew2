@@ -72,3 +72,31 @@ barTestObj.queen = "freya" // =>
 barTestObj.princess = "someone" // =>
 
 testObj.hasOwnProperty("king") // =>
+
+//------------ 
+let freya = {
+    breed: "border collie",
+    age: 4
+}
+Object.defineProperty(freya,"breed",{
+    writable: false
+})
+freya.breed = "aussie"
+console.log(freya.breed) // => 
+
+//-----
+
+Object.defineProperty(freya,"age",{
+    enumerable: false
+})
+
+console.log(Object.keys(freya)) // =>
+let props = []
+for(let prop in freya){
+    props.push(prop)
+}
+console.log(props) // => 
+
+console.log("age" in freya) //=>
+console.log(freya.hasOwnProperty("age")) //=>
+console.log(Reflect.ownKeys(freya)) //=>
