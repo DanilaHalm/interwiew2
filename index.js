@@ -31,3 +31,13 @@ function foo(){
     return k
 }
 //-----------
+let testObj = {
+    king: "danila",
+    queen: "nastya"
+} 
+Object.keys(testObj) // => 
+Object.values(testObj) // => 
+let entries = Object.entries(testObj) // => 
+
+
+testObj.hasOwnProperty("king") // =>
