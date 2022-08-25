@@ -6,21 +6,21 @@ var b = "nastya"
 
 ---------- 
 
-var a = "danila" 
-var b
-console.log(a + b);
+var c = "danila" 
+var d
+console.log(c + d);
 
-b = "nastya"
+d = "nastya"
 ---------- 
-let a = "danila" 
+let f = "danila" 
 
-console.log(a + b);
+console.log(f + g);
 
-let b = "nastya"
+let g = "nastya"
 ---------- 
-let a = "danila" 
-let b
-console.log(a + b);
+let x = "danila" 
+let y
+console.log(x + y);
 
-b = "nastya"
+y = "nastya"
 ----------
