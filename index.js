@@ -24,3 +24,10 @@ console.log(x + y);
 
 y = "nastya"
 //----------
+
+let func = foo();
+let k = 1 
+function foo(){
+    return k
+}
+//-----------
