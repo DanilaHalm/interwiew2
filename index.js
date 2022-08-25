@@ -37,7 +37,12 @@ let testObj = {
 } 
 
 let kindom = Object.create(testObj)
-Object.getPrototypeOf(kindom) // =>
+Object.getPrototypeOf(kindom) // => 
+
+console.log(kindom.hasOwnProperty("king")) // =>
+console.log("king" in kindom) // =>
+console.log("toString" in kindom) // =>
+
 kindom.king // => 
 kindom.valet = "valet"
 kindom.valet // =>
