@@ -37,7 +37,11 @@ let testObj = {
 } 
 
 let kindom = Object.create(testObj)
+Object.getPrototypeOf(kindom) // =>
 kindom.king // => 
+kindom.valet = "valet"
+kindom.valet // =>
+testObj.valet // =>
 
 let testObj2 = {
     dog: "freya",
