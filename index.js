@@ -137,3 +137,26 @@ let bird = {
 }
 console.log(Object.getOwnPropertyDescriptor(bird,"name")); //=>
 console.log(Object.getOwnPropertyDescriptors(bird)) //=>
+
+//----------- 
+
+let bird = {
+    name: "pigeon",
+    color: "blue" ,
+   [Symbol.iterator](){
+       this.i = 0
+       this.current = Object.keys(this)[this.i]
+       return this
+   },
+   next(){
+       if(this.i <= Object.keys(this).length) {
+           return {done: false,value: Object.keys(this)[this.i++]}
+       } else {
+           return {done: true}
+       }
+   }
+}
+
+for (let i of bird){
+    console.log(i)
+}
