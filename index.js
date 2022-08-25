@@ -36,6 +36,16 @@ let testObj = {
     queen: "nastya"
 } 
 
+let kindom = Object.create(testObj)
+kindom.king // => 
+
+let testObj2 = {
+    dog: "freya",
+    cat: "none"
+}
+let kindom2 = Object.assign(testObj,testObj2)
+
+
 Object.keys(testObj) // => 
 
 Object.values(testObj) // => 
