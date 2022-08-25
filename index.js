@@ -173,3 +173,37 @@ let bird = {
 for (let i of bird){
     console.log(i)
 }
+
+//---------- 
+
+let arr = [1,2,3,4,5]
+
+let copy1 = Array.from(arr)
+let copy2 = arr.slice()
+let copy3 = [...arr] // DEEP
+let copy4 = []
+for(let i=0;i<arr.length;i++){
+    copy4.push(arr[i])
+}
+let copy5 = arr.map(x=>x) 
+let copy6 = Object.assign([],arr) 
+let copy7 = arr.reduce((newArr,el) => { newArr.push(el)
+return newArr
+},[])
+let copy8 = [].concat(arr)
+let copy9 = JSON.parse(JSON.stringify(arr)) // DEEP
+
+
+
+let arr1 = arr.filter((x,y) => y < 3)
+let arr2 = arr.slice(0,3) 
+let [a,b,...arr3] = arr.reverse()
+arr3 = arr3.reverse()
+
+let arr4 = []
+for(let i=0;i<3;i++){
+    arr4.push(arr[i])
+}
+
+//-------------
+
