@@ -130,3 +130,10 @@ Object.defineProperty(chelsea,"animal",{
     writable:true
 }) //=>
 
+//---------
+let bird = {
+    name: "pigeon",
+    color: "blue"
+}
+console.log(Object.getOwnPropertyDescriptor(bird,"name")); //=>
+console.log(Object.getOwnPropertyDescriptors(bird)) //=>
