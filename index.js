@@ -99,4 +99,34 @@ console.log(props) // =>
 
 console.log("age" in freya) //=>
 console.log(freya.hasOwnProperty("age")) //=>
-console.log(Reflect.ownKeys(freya)) //=>
+console.log(Reflect.ownKeys(freya)) //=> 
+
+//-------------
+
+let chelsea = {
+    animal: "cat",
+    age: 10
+}
+
+Object.defineProperty(chelsea,'animal',{
+    configurable: false
+})
+
+delete chelsea.animal 
+console.log(chelsea.animal) //=>
+chelsea.animal = "dog"
+console.log(chelsea.animal) //=>
+
+//конфигурация защищает только свойства объявленные , если их еще нету то они добавятся единожды
+
+Object.defineProperty(chelsea,"animal",{
+    writable:false
+})
+
+chelsea.animal = "duck"
+console.log(chelsea.animal) //=>
+
+Object.defineProperty(chelsea,"animal",{
+    writable:true
+}) //=>
+
