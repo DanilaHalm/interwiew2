@@ -131,6 +131,14 @@ Object.defineProperty(chelsea,"animal",{
 }) //=>
 
 //---------
+Object.defineProperties(chelsea, {
+      animal: {
+        //writable: false
+      },
+      age: { 
+        //enumerable: true
+      }
+})
 let bird = {
     name: "pigeon",
     color: "blue"
@@ -150,7 +158,10 @@ let bird = {
    },
    next(){
        if(this.i <= Object.keys(this).length) {
-           return {done: false,value: Object.keys(this)[this.i++]}
+           return {
+                    done: false,
+                    value: this[Object.keys(this)[this.i++]]
+                  }
        } else {
            return {done: true}
        }
