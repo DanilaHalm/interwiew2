@@ -207,3 +207,15 @@ for(let i=0;i<3;i++){
 
 //-------------
 
+let multiArr = [[1,2],[3,4],[5,6]]
+
+let m1 = [].concat(...multiArr)
+let m2 = [].concat.apply([],multiArr)
+let m3 = multiArr.reduce((arr,el) => {
+    return  arr.concat(el)
+    
+},[])
+let m4 = multiArr.flat(Infinity) // multi
+console.log(m4);
+
+//------------
