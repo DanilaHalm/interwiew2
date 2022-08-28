@@ -238,3 +238,24 @@ let arrObj = [
   arrObj.sort((a,b)=>a.age > b.age) //=>
 //---------
 
+let myNumber = 4
+function changeN(value){
+    value = value * 2 
+    console.log(value)
+}
+
+console.log(myNumber); //=>
+changeN(myNumber); //=> 
+console.log(myNumber) //=> 
+
+let myObject = {name:"freya"} 
+
+function changeObj(value){
+    value.name = "bobik"
+}
+
+console.log(myObject)
+changeObj(myObject)
+console.log(myObject)
+//---------
+
