@@ -259,3 +259,22 @@ changeObj(myObject)
 console.log(myObject)
 //---------
 
+function f1(){
+    let sum = 0
+    for(let i = 0; i < arguments.length;i++){
+       sum += arguments[i] 
+    }
+    return sum
+}
+function f2(...values){
+    let sum = 0
+    for(let i = 0; i < values.length; i++){
+        sum+= values[i]
+    }
+    return sum
+}
+
+console.log(f1(1,2,3)); //=> 6
+console.log(f2(5,5,5)); //=> 15
+//----------
+
