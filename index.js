@@ -219,3 +219,11 @@ let m4 = multiArr.flat(Infinity) // multi
 console.log(m4);
 
 //------------
+
+let sortN = [3,7,87,1,400]
+sortN.sort() //=>
+sortN.sort((a,b)=>a>b) //=>
+
+let sortMix = [2,4,"c",'a',1,"b",3]
+sortMix.sort((a,b) => a>b) //=>
+//----------- 
