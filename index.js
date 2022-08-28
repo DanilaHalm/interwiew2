@@ -227,3 +227,14 @@ sortN.sort((a,b)=>a>b) //=>
 let sortMix = [2,4,"c",'a',1,"b",3]
 sortMix.sort((a,b) => a>b) //=>
 //----------- 
+
+let arrObj = [
+    {"age":1,"year":5},
+    {"age":2,"year":8},
+    {"age":4,"year":4},
+    {"age":2,"year":3},
+    {"age":1,"year":3}
+    ]
+  arrObj.sort((a,b)=>a.age > b.age) //=>
+//---------
+
