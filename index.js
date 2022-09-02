@@ -278,7 +278,7 @@ console.log(f1(1,2,3)); //=> 6
 console.log(f2(5,5,5)); //=> 15
 //----------
 //В константах где-то надо создать объект commonUserWord со стартовыми значениями
-let commonUserWord: IUserWordl = {
+let commonUserWord: IUserWord = {
   difficulty: "",
   optional: {
     learned: 0;
