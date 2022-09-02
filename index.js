@@ -294,7 +294,7 @@ let commonUserWord: IUserWord = {
 let wordId = target.dataset.id
 let response = await getUserWord(userId, wordId);
 if(response) {
-  response.difficulty = "hard" (//нам тут надо будет убедиться что это сработает, иначе нужно будет сделать копию респонса)
+  response.difficulty = "hard" //(нам тут надо будет убедиться что это сработает, иначе нужно будет сделать копию респонса)
   let updateResponse = await updateUserWord(userId,wordId, response);
   if(updateResponse){
     target.style // или .classList ну что нужно сделать с картинкой
