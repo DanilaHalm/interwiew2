@@ -281,13 +281,13 @@ console.log(f2(5,5,5)); //=> 15
 let commonUserWord: IUserWord = {
   difficulty: "",
   optional: {
-    learned: 0;
-    countUse: 0
-    counteCorrect: 0
-    countUseSprint: 0
-    countCorrectSprint: 0
-    countUseAudiocall: 0
-    countCorrectAudiocall: 0
+    learned: 0,
+    countUse: 0,
+    counteCorrect: 0,
+    countUseSprint: 0,
+    countCorrectSprint: 0,
+    countUseAudiocall: 0,
+    countCorrectAudiocall: 0,
   }
 }
 
@@ -297,13 +297,13 @@ if(response) {
   response.difficulty = "hard" (//нам тут надо будет убедиться что это сработает, иначе нужно будет сделать копию респонса)
   let updateResponse = await updateUserWord(userId,wordId, response);
   if(updateResponse){
-    target.style или .classList //ну что нужно сделать с картинкой
+    target.style // или .classList ну что нужно сделать с картинкой
   }
 } else { 
   let body = Object.assign({},commonUserWord)
   body.difficulty = "hard"
   let response = await createUserWord(userId, wordId, body);
   if (response) {
-    target.style или .classList //ну что нужно сделать с картинкой
+    target.style // или .classList ну что нужно сделать с картинкой
 }
 }
