@@ -277,4 +277,33 @@ function f2(...values){
 console.log(f1(1,2,3)); //=> 6
 console.log(f2(5,5,5)); //=> 15
 //----------
+//В константах где-то надо создать объект commonUserWord со стартовыми значениями
+let commonUserWord: IUserWordl = {
+  difficulty: "",
+  optional: {
+    learned: 0;
+    countUse: 0
+    counteCorrect: 0
+    countUseSprint: 0
+    countCorrectSprint: 0
+    countUseAudiocall: 0
+    countCorrectAudiocall: 0
+  }
+}
 
+let wordId = target.dataset.id
+let response = await getUserWord(userId, wordId);
+if(response) {
+  response.difficulty = "hard" (//нам тут надо будет убедиться что это сработает, иначе нужно будет сделать копию респонса)
+  let updateResponse = await updateUserWord(userId,wordId, response);
+  if(updateResponse){
+    target.style или .classList //ну что нужно сделать с картинкой
+  }
+} else { 
+  let body = Object.assign({},commonUserWord)
+  body.difficulty = "hard"
+  let response = await createUserWord(userId, wordId, body);
+  if (response) {
+    target.style или .classList //ну что нужно сделать с картинкой
+}
+}
